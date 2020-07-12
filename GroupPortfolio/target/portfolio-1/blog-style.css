@@ -1,0 +1,96 @@
+body {
+    display: grid;
+    /*grid-template-columns: 50% 50%;*/
+    grid-gap: 15px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+p {
+    font-family: 'Apercu Pro', sans-serif;
+    src: url('ApercuPro.eot');
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.header {
+    padding-top: 24px;
+    float: left;
+}
+
+ul.header {
+    padding-left: 0px;
+}
+
+li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    display: inline;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    src: url('ApercuPro.eot');
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    color: rgb(217, 71, 17); 
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#main-title {
+    font-family: 'Playfair Display';
+    font-size: 150px;
+    color: rgb(193, 194, 217);
+    margin-bottom: 30px;
+    margin-top: 0px;
+    text-align: right;
+}
+
+input.fields {
+    width: 100%;
+    resize: none;
+    outline-color: #d94711;
+    border: 1px solid transparent;
+    font-size: 1.5rem;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input.fields :hover {
+    color: #d94711;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 900px;
+    color: #0d0c22;
+    display: block;
+    margin: 14px 0 4px;
+
+}
+
+input.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #d94711;
+    border-radius: 4px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-top: 20px;
+    border: none;
+    width: 100px;
+}
