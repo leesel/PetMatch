@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fareeda Kasim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display" rel="stylesheet">
+    <script src="script.js"></script>
+  </head>
+  <body onload="getComment()">
+      <img class="main-image" src="/myimages/fareeda.jpeg">
+      <div class="main-right">
+          <ul class="header">
+              <a href="#section1"><li>About me</li></a>
+              <a href="#section2"><li>Experience</li></a>
+              <a href="#section3"><li>Contact</li></a>
+          </ul>
+          <h1 id="main-text">Fareeda Kasim</h1>
+      </div>
+      <div class="quote">
+          <h2>"There is no greater agony than bearing an untold story inside of you."</h2>
+          <h4 class="maya">Maya Angelou</h4>
+      </div>
+      <a id="section1"><div class="about-me"></a>
+          <h4 class="about-text">About me</h4><br>
+          <p>I'm a rising sophomore at The Georgia Institute of Technology majoring in Computer science with a minor in Industrial Design.
+          I'm passionate about design, software development, entrepreneurship  and public policy. <br><br> I love learning, and CS gives me 
+          the opportunity to interact with so many diverse fields. I never stop learning with CS.<br><br>My favorite things to do include 
+          reading novels, watching TV shows, cooking, traveling, drawing and going on adventures.</p>
+      </div>
+      <img class="main-image" id="persona-image" src="/myimages/persona.png">
+      <a id="section2"></a>
+      <h4 class="experience-title">Experience</h4>
+      <div class="experience">
+          <div class="box">
+              <div class="icon">01</div>
+              <div class="content">
+                  <h3>Flutterwave</h3>
+                  <h5>Intern</h5>
+                  <p>I performed ideation and sketching of a mobile application for a pharmaceutical company. I also designed, 
+                  prototyped and developed the user interface of an NGO website with a team.</p>
+                  <a href="https://www.linkedin.com/in/kasimfareeda/" target="_blank">Read More</a>
+              </div>
+          </div>
+          <div class="box">
+              <div class="icon">02</div>
+              <div class="content">
+                  <h3>Guaranty Trust Bank</h3>
+                  <h5>Web dev intern</h5>
+                  <p>I developed the homepage of a ride-share website that was launching within 
+                  an organization of over 150 employees using HTML and CSS skills</p>
+                  <a href="https://www.linkedin.com/in/kasimfareeda/" target="_blank">Read More</a>
+              </div>
+          </div>
+          <div class="box">
+              <div class="icon">03</div>
+              <div class="content">
+                  <h3>Hospital booking system</h3>
+                  <h5>Personal project</h5>
+                  <p>I designed a database-driven online solution where people could book appointments, 
+                  find out about their medical services, display contact information and give feedback.</p>
+                  <a href="https://www.linkedin.com/in/kasimfareeda/" target="_blank">Read More</a>
+              </div>
+          </div>
+      </div>
+      <h4 class="comment-title">Comments</h4>
+      <div id="comment-section">
+          <form action="/data" method="POST" target="_self">
+              <p> I hope you enjoyed looking through my portfolio. Please leave a comment! </p>
+              <label>Name</label><br>
+              <textarea name="name" placeholder="Type your name"></textarea>
+              <br>
+              <label>Comment</label><br>
+              <textarea name="comment" placeholder="Type your comment" required></textarea>
+              <br>
+              <input type="submit" class="submit-button"/>
+              <br><br>
+          </form>
+      </div>
+      <div id="recent-comments">
+          <h4>Recent comments</h4>
+      </div>
+      <a id="section3"><div class="contact"></a>
+          <h4 class="contact-text">Contact</h4>
+          <a href="https://www.linkedin.com/in/kasimfareeda/" target="_blank"><img src="/myimages/linkedin.png" id="contact-items"></a>
+          <a href="https://www.instagram.com/kasimfareeda/" target="_blank"><img src="/myimages/instagram-sketched.png" id="contact-items"></a>
+          <a href="https://github.com/kasimfareeda" target="_blank"><img src="/myimages/github.png" id="contact-items"></a>
+          <a href="https://hangouts.google.com/" target="_blank"><img src="/myimages/google-hangouts.png" id="contact-items"></a>
+      </div>
+  </body>
+</html>

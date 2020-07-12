@@ -1,0 +1,325 @@
+body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    padding-top: 24px;
+    padding-right: 20px;
+    float: right;
+}
+
+.about-text {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-text {
+    font-family: 'Poppins', sans-serif;
+    float: left;
+}
+
+li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding-right: 40px;
+    display: inline;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    src: url('ApercuPro.eot');
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    color: rgb(217, 71, 17); 
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    color: #151426;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.quote {
+    grid-column: 1/3;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    margin: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.maya {
+    text-align: right;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-me {
+    grid-column: 1/2;
+    padding-left: 100px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+#persona-image {
+    padding-left: 100px;
+    padding-right: 100px; 
+}
+
+.experience-title {
+    grid-column: 1/3;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    margin: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main-text {
+    font-family: 'Playfair Display';
+    font-size: 150px;
+    padding-top: 300px;
+    padding-left: 20px;
+    color: rgb(193, 194, 217);
+}
+
+p {
+    font-family: 'Apercu Pro', sans-serif;
+    src: url('ApercuPro.eot');
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contact {
+    grid-column: 1/3;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+#contact-items {
+    width: 48px;
+    height: 33px;
+    padding-right: 15px;
+    float: right;
+}
+
+.experience {
+    grid-column: 1/3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.experience .box {
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.experience .box .icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.experience .box:nth-child(1) .icon {
+    box-shadow: 0 0 0 0 #a61a0d;
+    background: #a61a0d;
+
+}
+
+.experience .box:nth-child(1):hover .icon {
+    box-shadow: 0 0 0 400px #a61a0d;
+}
+
+.experience .box:nth-child(2) .icon {
+    box-shadow: 0 0 0 0 #d93611;
+    background: #d93611;
+
+}
+
+.experience .box:nth-child(2):hover .icon {
+    box-shadow: 0 0 0 400px #d93611;
+}
+
+.experience .box:nth-child(3) .icon {
+    box-shadow: 0 0 0 0 #162d73;
+    background: #162d73;
+
+}
+
+.experience .box:nth-child(3):hover .icon {
+    box-shadow: 0 0 0 400px #162d73;
+}
+
+.experience .box .content {
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.experience .box:hover .content {
+    color: #fff;
+
+}
+
+.experience .box .content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.experience .box .content p {
+    margin: 0;
+    padding: 0;
+}
+
+.experience .box .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.comment-title {
+    grid-column: 1/3;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    outline-color: #d94711;
+    border: 1px solid transparent;
+    font-size: 16.5px;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea :hover {
+    color: #d94711;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 1.6rem;
+    font-weight: 900px;
+    color: #0d0c22;
+    display: block;
+    margin: 14px 0 4px;
+
+}
+
+input.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #d94711;
+    border-radius: 4px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-top: 20px;
+    border: none;
+    width: 100px;
+}
+
+#comment-section {
+    grid-column: 1/3;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#recent-comments {
+    grid-column: 1/3;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.each-comment {
+    font-size: 16px;
+    font-family: 'Apercu Pro', sans-serif;
+    font-weight: 300;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid rgba(217, 71, 17, 0.6);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#recent-comments h4 {
+    text-transform: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
