@@ -1,18 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 50px;
-    margin: 40px 0px 40px 40px;
+    width: 100%;
     font-family: 'Open Sans';
 }
 
-.header-left {
-    grid-column: 1/2;
+header {
+    display: flex;
+    align-items: center;
+    grid-column: 1/3;
+    margin: 25px 60px 25px 60px;
 }
 
 img.logo {
     width: 62px;
     height: 66px;
+}
+
+ul.navbarr {
+    margin-left: 100px;
+    margin-right: 741px;
 }
 
 li {
@@ -24,6 +37,7 @@ li {
     font-family: 'Open Sans';
     text-decoration: none;
     color: black;
+    list-style: none;
 }
 
 li:hover {
@@ -32,12 +46,18 @@ li:hover {
     text-decoration-color: white;
 }
 
-.header-right {
-    grid-column: 2/3;
+a {
+    text-decoration: none;
+    color: black;
 }
+
+a:hover {
+    color: #57BAAB;
+} 
 
 .main-left {
     grid-column: 1/2;
+    margin: 30px 70px 0px 60px;
 }
 
 #main-paragraph {
@@ -61,6 +81,7 @@ li:hover {
     text-transform: uppercase;
     font-family: 'Open Sans';
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 #main-text {
@@ -70,27 +91,48 @@ li:hover {
     font-size: 96px;
     line-height: 100px;
     color: #57BAAB;
+    margin-bottom: 47px;
+}
+
+#main-paragraph {
+    margin-bottom: 47px;
 }
 
 .main-right {
     grid-column: 2/3;
 }
 
+.button p {
+    font-weight: bold;
+}
+
+h6 {
+    margin-left: 5px;
+}
+
 img.mainpic {
-    /**position: absolute;*/
     width: 700px;
     height: 499px;
     box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.25);
     border-radius: 50px 0px 0px 50px;
-    margin-right: 0px;
+    margin: 0px 0px 20px 15px;
 }
 
 .footer {
     grid-column: 1/3;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 60px 25px 60px;
 }
 
-img.facebook, img.twitter, img.instagram, img.search, img.persona {
+img.facebook, img.twitter, img.persona {
     width: 31px;
     height: 31px;
-    float: right;
+    margin-right: 36px;
+}
+
+img.search, img.instagram {
+    width: 31px;
+    height: 31px;
+    margin-right: 0px;
 }
