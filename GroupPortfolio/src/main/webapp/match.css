@@ -1,0 +1,33 @@
+
+.pet{
+    max-width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    line-height: 25px;
+}
+ul{
+    list-style: none;
+}
+
+#petOptions{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: darksalmon;
+    text-align: center;
+}
+
+.pet{
+    background-color: bisque;
+}
+
+.petDescription{
+    margin-left: 15%;
+    margin-right: 15%
+}
+.dog{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.dogOne{
+    max-width: 25%;
+}
