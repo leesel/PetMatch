@@ -1,33 +1,150 @@
-
-.pet{
-    max-width: 50%;
-    text-align: center;
-    margin-left: 25%;
-    line-height: 25px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-ul{
+
+body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    font-family: 'Open Sans';
+}
+
+header {
+    display: flex;
+    align-items: center;
+    grid-column: 1/3;
+    margin: 18px 60px 25px 60px;
+}
+
+img.logo {
+    width: 62px;
+    height: 66px;
+}
+
+ul.navbarr {
+    margin-left: 100px;
+    margin-right: 741px;
+}
+
+li {
+    list-style-type: none;
+    font-size: 18px;
+    padding-right: 40px;
+    display: inline;
+    font-weight: normal;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    color: black;
     list-style: none;
 }
 
-#petOptions{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: darksalmon;
+li:hover {
+    color: #57BAAB; 
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #57BAAB;
+} 
+
+#Intro {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 150px 25px 150px; 
+}
+
+.intro-left {
+    margin-right: 100px;
+}
+
+p.welcome {
+    margin-bottom: 40px;
+}
+
+.welcome {
+    font-family: 'Bodoni 72';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 100px;
+    color: #57BAAB;
+}
+
+.image-right {
+    border-radius: 10px;
+    width: 554px;
+    height: 412px;
+}
+
+#MatchingForm {
+    grid-column: 1/3;
+    margin: 18px 250px 25px 250px;
+    margin-top: 40px;
+}
+
+p.instructions {
+    font-weight: bold;
     text-align: center;
 }
 
-.pet{
-    background-color: bisque;
+input[type="text"] {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
 }
 
-.petDescription{
-    margin-left: 15%;
-    margin-right: 15%
+select {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px
 }
-.dog{
-    margin-top: 5%;
-    margin-bottom: 5%;
+
+#submit-button {
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #57BAAB;
+    width: 170px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    margin-bottom: 10px;
+    height: 50px;
 }
-.dogOne{
-    max-width: 25%;
+
+#submit-button p{
+    font-weight: bold;
+}
+
+.footer {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 60px 25px 60px;
+}
+
+img.facebook, img.twitter, img.persona {
+    width: 31px;
+    height: 31px;
+    margin-right: 36px;
+}
+
+img.search, img.instagram {
+    width: 31px;
+    height: 31px;
+    margin-right: 0px;
 }
