@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, inital-scale=1">
+		<title>Pet Match</title>
+    <style>
+        body{
+            margin-left:25%;
+            margin-right: 25%;
+            margin-top:10%;
+            margin-bottom: 10%;
+        }
+        #MatchingForm{
+            background-color: #1affb2;
+            padding:10%;
+            text-decoration: darkgray;
+            border-style: solid;
+            border-radius: 20%;
+            letter-spacing: 2px;
+            width: 60%;
+            font-size: 20px;
+        }
+   
+    </style>
+ </head>
+    <body>
+        
+        <div id="MatchingForm">
+            <form>
+                <h1>Pet Matching Quiz</h1>
+                <label>Location:</label><br>
+                <select id="locationType">
+                    <option value="locationAll">open to adopting within the country</option>
+                    <option value="loactionState">open to adopting within the state</option>
+                    <option value="locationCity">open to adopting within the city</option>
+                </select><br><br>
+
+                <label>Pet:</label><br>
+                <select id="petType">
+                    <option value="petDog">Dog</option>
+                    <option value="petCat">Cat</option>
+                    <option value="petRabbit">Rabbit</option>
+                    <option value="petBirds">Birds</option>
+                    <option value="petFish">Fish</option>
+                </select><br><br>
+
+                <label>Age Range:</label><br>
+                <select id="ageType">
+                    <option value="ageInfant">Infant</option>
+                    <option value="ageYoung">Young</option>
+                    <option value="ageAdult">Adult</option>
+                    <option value="ageSenior">Senior</option>
+                </select><br><br>
+
+                <label>Gender:</label><br>
+                <select id="genderType">
+                    <option value="genderFemale">Female</option>
+                    <option value="genderMale">Male</option>
+                </select><br><br>
+
+                <label>Tags:</label><br>
+                <select id="tagType">
+                    <option value="tagTrained">home-trained</option>
+                    <option value="tagKids">good with kids</option>
+                    <option value="tagPets">good with other pets</option>
+                    <option value="tagBonded">bonded-pair</option>
+                    <option value="tagPlayful">playful</option>
+                </select><br><br>
+
+                <input class="form-control form-control-lg" type="submit">
+            </form>
+        </div>
+
+    </body>
+
+</html>
