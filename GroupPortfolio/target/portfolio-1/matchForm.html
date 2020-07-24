@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8">
+        <title>PetMatch</title>
+        <link rel="stylesheet" href="match.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="/images/logo.png">
+            <nav>
+                <ul class="navbarr">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About us</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="/person.html"><img class="persona" src="/images/user.png"></a>
+            <img class="search" src="/images/search.png">
+        </header>
+        <div id="Intro">
+            <div class="intro-left">
+                <p class="welcome">Welcome to PetMatch!</p>
+                <p>We’re so excited to help you find your perfect companion. 
+                    Please tell us a bit about yourself and your ideal pet by filling out this form.
+                </p>
+            </div>
+            <div class="intro-right">
+                <img class="image-right" src="/images/two-dogs.jpeg"></img>
+            </div>
+        </div>
+        <div id="MatchingForm">
+            <form id="petForm">
+                <p class="instructions">Please make sure you fill in all required fields before submitting</p>
+                <br><br>
+                <label>Name</label><br>
+                <input type="text" id="name" name="name"><br><br><br>
+                <label>Country</label><br>
+                <input type="text" id="country" name="country"><br><br><br>
+                <label>Zipcode</label><br>
+                <input type="text" id="zipcode" name="zipcode"><br><br><br>
+                <label>Which animal are you interested in?</label><br>
+                <select id="petType" name="petType">
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Rabbit">Rabbit</option>
+                    <option value="Birds">Birds</option>
+                    <option value="Horse">Horse</option>
+                </select><br><br><br>
+                <label>Which breed are you interested in?</label><br>
+                <select id="breedType" name="breedType">
+                    <option value="Alaskan+Malamute">Alaskan Malamute</option>
+                    <option value="Beagle">Beagle</option>
+                    <option value="Cardigan+Welsh+Corgi">Cardigan Welsh Corgi</option>
+                    <option value="Chihuahua">Chihuahua</option>
+                    <option value="Dachshund">Dachshund</option>
+                    <option value="Dogue+de+bordeaux">Dogue de bordeaux</option>
+                    <option value="French+Bulldog">French Bulldog</option>
+                    <option value="German+Shepherd+Dog">German Shepherd Dog</option>
+                    <option value="German+Shorthaired+Pointer">German Shorthaired Pointer</option>
+                    <option value="Goldendoodle">Goldendoodle</option>
+                    <option value="Golden+Retriever">Golden Retriever</option>
+                    <option value="Husky">Husky</option>
+                    <option value="Italian+Greyhound">Italian Greyhound</option>
+                    <option value="Labrador+Retriever">Labrador Retriever</option>
+                    <option value="Old+English+Sheepdog">Old English Sheepdog</option>
+                    <option value="Poodle">Poodle</option>
+                    <option value="Retriever">Retriever</option>
+                    <option value="Rottweiler">Rottweiler</option>
+                    <option value="Shih+Tzu">Shih Tzu</option>
+                    <option value="Yorkshire+Terrier">Yorkshire Terrier</option>
+                </select><br><br><br>
+                <label>What age group are you considering?</label><br>
+                <select id="ageType" name="ageType">
+                    <option value="Baby">Baby</option>
+                    <option value="Young">Young</option>
+                    <option value="Adult">Adult</option>
+                    <option value="Senior">Senior</option>
+                </select><br><br><br>
+                <label>What gender are you interested in?</label><br>
+                <select id="genderType" name="genderType">
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                </select><br><br><br>
+                <label>Are you comfortable doing some training with your pet to improve manners?</label><br>
+                <select id="petTrained" name="petTrained">
+                    <option value="False">Yes</option>
+                    <option value="True">No</option>
+                    <option value="false,true">Maybe, tell me more about them</option>
+                </select><br><br><br>
+                <label>Are you interested in adopting a pet with known medical or behavioral needs?</label><br>
+                <select id="specialNeeds" name="specialNeeds">
+                    <option value="False">Yes</option>
+                    <option value="True">No</option>
+                    <option value="false,true">Maybe, tell me more about them</option>
+                </select><br><br><br>
+                <input type="submit" value="Submit" id="submit-button" formaction="/person.html">
+            </form>
+        </div>
+        <div class="footer">
+            <img class="facebook" src="/images/facebook.png">
+            <img class="twitter" src="/images/twitter.png">
+            <img class="instagram" src="/images/instagram.png">
+        </div>
+    </body>
+</html>
