@@ -25,6 +25,22 @@ function getContent() {
     });
 }
 
+function onSignIn(googleUser){
+    var profile = googleUser.getBasicProfile()
+    console.log("User is " + JSON.stringify(profile));
+    var element = document.querySelector("#content");
+    element.innerText = profile.getName();
+    var image = document.createElement('img')
+    image.setAttribute('src', googleUser.getImageUrl())
+    element.append(image)
+}
+
+function signOut(){
+    gapi.auth2.getAuthInstance().signOut().then(function() {
+    console.log('user signed out')
+    })
+}
+
 
 
     

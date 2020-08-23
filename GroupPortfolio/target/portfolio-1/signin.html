@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Google Sign-in Authentication Draft</title>
+        <meta name="google-signin-client_id" content="936913126071-jpfm6rg05dfoctq6p1kkp8p3nh17mi7j.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <button onClick="signOut()"> Sign Out</button>
+    </head>
+    <body>
+        <h1>Leesel Practicing Google API</h1>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div id="content"></div>
+    </body>
+    <script>
+        function onSignIn(googleUser){
+            var profile = googleUser.getBasicProfile()
+            console.log("User is " + JSON.stringify(profile));
+            var element = document.querySelector("#content");
+            element.innerText = profile.getName();
+            var image = document.createElement('img')
+            image.setAttribute('src', googleUser.getImageUrl())
+            element.append(image)
+        }
+
+        function signOut(){
+            gapi.auth2.getAuthInstance().signOut().then(function() {
+                console.log('user signed out')
+            })
+        }
+    </script>
+</html>

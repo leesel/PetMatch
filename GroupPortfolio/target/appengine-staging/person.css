@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    font-family: 'Open Sans';
+}
+
+header {
+    display: flex;
+    align-items: center;
+    grid-column: 1/3;
+    margin: 18px 60px 25px 60px;
+}
+
+img.logo {
+    width: 62px;
+    height: 66px;
+}
+
+ul.navbarr {
+    margin-left: 100px;
+    margin-right: 741px;
+}
+
+li {
+    list-style-type: none;
+    font-size: 18px;
+    padding-right: 40px;
+    display: inline;
+    font-weight: normal;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+li:hover {
+    color: #57BAAB; 
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #57BAAB;
+} 
+
+#results {
+    grid-column: 1/3;
+    margin: 20px 100px 20px 100px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.each-pet {
+    border-radius: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 20px;
+    border-color: #b5b5b5;
+}
+
+.each-pet:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.name-title {
+    font-size: 1.4rem;
+    line-height: 1.1;
+    font-family: 'Bodoni 72';
+    color: #57BAAB;
+}
+
+p.breed {
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.animal-image {
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.footer {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 60px 25px 60px;
+}
+
+img.facebook, img.twitter, img.persona {
+    width: 31px;
+    height: 31px;
+    margin-right: 36px;
+}
+
+img.search, img.instagram {
+    width: 31px;
+    height: 31px;
+    margin-right: 0px;
+}

@@ -48,9 +48,6 @@ function fetchAllData(e) {
         const results = document.querySelector('#results');
         //Clear page 
         results.innerHTML = '';
-        results.innerHTML = 'Hi ' + name + ',';
-        results.innerHTML = 'We found some matches for you, take a look:'; 
-        results.innerHTML =  `<br><br>`
         data.animals.forEach(pet => {
             const container = document.createElement('div');
             container.setAttribute("class", "each-pet");

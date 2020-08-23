@@ -3,18 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <title>PetMatch</title>
+        <meta name="google-signin-client_id" content="936913126071-jpfm6rg05dfoctq6p1kkp8p3nh17mi7j.apps.googleusercontent.com">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
 		<script src='script.js'></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
     </head>
-    <body>
+    <body> <!-- think about where to add the signout button --> <!-- <button onClick="signOut()"> Sign Out</button> -->
         <header>
             <img class="logo" src="/images/logo.png">
             <nav>
                 <ul class="navbarr">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/about.html">About us</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/signin.html">Contact</a></li> <!-- remember to change and delete this pls-->
                 </ul>
             </nav>
             <a href="/person.html"><img class="persona" src="/images/user.png"></a>
@@ -26,6 +28,8 @@
                 On PetMatch, you don’t have to scroll through thousands of pictures to find the perfect pet to adopt. 
                 We’ll help you find the perfect companion. We’ve got you. 
             </p>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <div id="content"></div>
             <a href="/matchForm.html"><p class="button">Join PetMatch</p></a>
             <h6>Already have an account? <strong>Sign in</strong></h6>
         </div>
